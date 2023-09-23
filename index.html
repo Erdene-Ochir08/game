@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body{
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				background-color:brown;
+				height:100vh;
+			}
+			.game{
+				width:600px;
+				padding:20px;
+				background-color:#fff;
+			}
+			.game img{
+				width:30%;
+				margin-right:15px;
+				cursor:pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+		<button onclick="test()">click here!</button>
+		<button onclick="color()">color change!</button>
+		-->
+		<div class="game">
+			<div class="count">
+				<p class="pCount">Player:</p>
+				<p class="cCount">Computer:</p>
+			</div>
+			<div class="choice">
+				<img src="https://www.vhv.rs/dpng/d/535-5351099_rock-paper-scissors-rock-paper-scissors-icons-png.png" onclick="play('paper')">
+                <img src="https://yvana.org/games/games-images/rock-paper-scissor/scissors.png" onclick="play('scissor')">
+                <img src="https://toppng.com/uploads/preview/rock-paper-scissors-circle-11562962494dqcjusyikw.png" onclick="play('rock')">
+			</div>
+			<div class="result">
+				<p class="player">Player choice: </p>
+				<p class="computer">Computer choice: </p>
+				<p class="winner">Winner: </p>
+			</div>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
